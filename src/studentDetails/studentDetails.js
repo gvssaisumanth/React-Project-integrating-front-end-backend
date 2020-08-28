@@ -41,7 +41,7 @@ class ResultBoard extends Component{
     if(this.state.data.length)
     {
         const markCheck=[]
-        this.state.data.map((data,index)=>{
+        this.state.data.map(data=>{
             const totalmarks=parseInt(data.marks.Maths)+parseInt(data.marks.English)+parseInt(data.marks.Science)
             markCheck.push(totalmarks)
         })
@@ -100,7 +100,7 @@ else{
     
     return(
         <div className="container">
-        
+        <p>For this to work server should be running</p>
         {this.state.data && this.Resulttable()}
         </div>)
     
