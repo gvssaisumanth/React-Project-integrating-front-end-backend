@@ -87,7 +87,9 @@ class ResultBoard extends Component{
             }
 else{
     return(
-        <h1>loading</h1>
+        <div>
+        <h1>please start backend from backend branch (node server.js)</h1>
+        <p>For this to work server should be running</p></div>
     )
 }
         
@@ -100,7 +102,7 @@ else{
     
     return(
         <div className="container">
-        <p>For this to work server should be running</p>
+        
         {this.state.data && this.Resulttable()}
         </div>)
     
